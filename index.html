@@ -37,66 +37,41 @@
       </nav>
     </header>
 
-    <main id="main">
-      <section id="hero" class="section sectionHero">
-        <h1 class="heroHeading">Ting å huske på når du koder</h1>
-        <div class="heroIntro">
-          <p class="heroParagraph">
-            Det er mange ting du må huske på når du lager ein websode. Her er
-            noen av tingene som du må huske på.
-          </p>
-          <img class="heroImg" src="/images/heroImg.png" alt="img" />
+    <main class="main">
+      <div class="dynamicInput">
+      <form class="dynamicList">
+        <h1>Handleliste</h1>
+        <label for="textInput">
+          Skriv noe her
+          <input
+            type="text"
+            class="textInput"
+            name="textInput"
+            id="textInput"
+            placeholder="Eksempel: Brød, vaske gulv, hund, etc"
+          />
+        </label>
+
+        <div class="buttonContainer">
+          <button id="addFront">Legg til forran</button>
+          <button id="removeFront">Fjern forran</button>
+          <button id="addBack">Legg til bak</button>
+          <button id="removeBack">Fjern bak</button>
+          <button id="emptyList">Tøm listen</button>
         </div>
-      </section>
-
-      <section id="gallery" class="section sectionGallery">
-        <figure class="figureone">
-          <img src="images/imageGridFeil.png" alt="1" />
-          <figcaption>
-            Det som er viktigst å holde hodet kaldt selv om koden ikkje fungerer
-            som den skal.
-          </figcaption>
-        </figure>
-
-        <figure class="figureTwo">
-          <img src="images/imageFeil.png" alt="2" />
-          <figcaption>
-            Det er lett å ikkje huske alt skrivingen riktig med alle
-            forkortningene.
-          </figcaption>
-        </figure>
-
-        <figure class="figureThree">
-          <img src="images/Imagekodesomgjøringenting.png" alt="3" />
-          <figcaption>
-            Av og til er det kode som gjør ingenting men som likevel skaper
-            forvirring.
-          </figcaption>
-        </figure>
-
-        <figure class="figureFoure">
-          <img src="images/ImageLettgleme.png" alt="4" />
-          <figcaption>
-            Det er lett å glemme classer som gjør at siden ser bra ut.
-          </figcaption>
-        </figure>
-
-        <figure class="figureFive">
-          <img src="images/ImageTrykkeFeil.png" alt="5" />
-          <figcaption>Det er lett å trykke på feil knapp.</figcaption>
-        </figure>
-
-        <figure class="figureSix">
-          <img src="images/BildeMangler.png" alt="6" />
-          <figcaption>Av og til trenger du flere bilder.</figcaption>
-        </figure>
-      </section>
-
-      <section id="delete" class="section sectionDelete">
-        <!-- Denne seksjonen skal ta i mot data kun fra JS -->
-        <button id="deleteButton" class="button deleteButton">Delete</button>
-      </section>
-    </main>
+      </div>
+    </form>
+    <div class="dynamicOutput">
+        <label for="ul"> Liste Her
+        </label> 
+        <ul id="displayList"> <placeholder>Det er ingenting å handle her :( 
+        </placeholder>
+        </ul>
+    </div>
+      
+  </main>
+      
+    
 
     <footer class="footer">
       <p>Laget av Steffen</p>
